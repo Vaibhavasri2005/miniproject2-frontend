@@ -10,7 +10,7 @@ searchBtn.addEventListener("click", async () => {
 
   resultsDiv.innerHTML = "Loading...";
   try {
-    const response = await fetch(`http://localhost:8008/search?q=${mood}&page=${randomPage}`);
+    const response = await fetch(`https://miniproject2-backend-bxqn.onrender.com/search?q=${mood}&page=${randomPage}`);
     const data = await response.json();
 
     resultsDiv.innerHTML = "";
